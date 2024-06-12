@@ -1,0 +1,20 @@
+2024-06-13 00:22:26,629 INFO c.Calculator [main] Performing addition operation
+2024-06-13 00:22:26,632 INFO c.Calculator [main] Performing division operation
+2024-06-13 00:24:18,994 INFO c.Calculator [main] Performing addition operation
+2024-06-13 00:24:18,998 INFO c.Calculator [main] Performing division operation
+2024-06-13 00:25:50,614 INFO c.Calculator [main] Performing addition operation
+2024-06-13 00:25:50,619 INFO c.Calculator [main] Performing division operation
+2024-06-13 00:25:50,620 INFO c.Calculator [main] Performing division operation
+2024-06-13 00:25:50,621 ERROR c.Calculator [main] Cannot divide by zero!
+2024-06-13 00:32:14,539 INFO c.Calculator [main] Performing addition operation
+2024-06-13 00:32:14,542 INFO c.Calculator [main] Performing division operation
+2024-06-13 00:32:14,544 INFO c.Calculator [main] Performing division operation
+2024-06-13 00:32:14,544 ERROR c.Calculator [main] Cannot divide by zero!
+2024-06-13 01:15:38,864 INFO c.Calculator [main] Performing addition operation
+2024-06-13 01:15:38,868 INFO c.Calculator [main] Performing division operation
+2024-06-13 01:15:38,869 INFO c.Calculator [main] Performing division operation
+2024-06-13 01:15:38,870 ERROR c.Calculator [main] Cannot divide by zero!
+2024-06-13 01:16:30,345 INFO c.Calculator [main] Performing addition operation
+2024-06-13 01:16:30,351 INFO c.Calculator [main] Performing division operation
+2024-06-13 01:16:30,352 INFO c.Calculator [main] Performing division operation
+2024-06-13 01:16:30,352 ERROR c.Calculator [main] Cannot divide by zero!
