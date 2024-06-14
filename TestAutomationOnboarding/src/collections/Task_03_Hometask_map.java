@@ -15,28 +15,35 @@ public class Task_03_Hometask_map {
 
         Map<String, String> phoneBook = new HashMap<>();
 
-        for (int i = 0; i < n; i++) {
-            String name = scanner.nextLine().trim();
-            String phoneNumber = scanner.nextLine().trim();
-            if (isValidPhoneNumber(phoneNumber) && isValidName(name)) {
-                phoneBook.put(name, phoneNumber);
-            }
-            else {
-                System.out.println("Entered Name or/and Phone number is Invalid and the entry is not added to Phonebook");
-            }
-            	
+        if ((n <= 100000) && (n >=1))
+        {        	
+		        for (int i = 0; i < n; i++) {
+		            String name = scanner.nextLine().trim();
+		            String phoneNumber = scanner.nextLine().trim();
+		            if (isValidPhoneNumber(phoneNumber) && isValidName(name)) {
+		                phoneBook.put(name, phoneNumber);
+		            }
+		            else {
+		                System.out.println("Entered Name or/and Phone number is Invalid and the entry is not added to Phonebook");
+		            }
+		            	
+		        }
+		
+		        while (scanner.hasNext()) {
+		            String query = scanner.nextLine().trim();
+		            if (phoneBook.containsKey(query)) {
+		                System.out.println(query + "=" + phoneBook.get(query));
+		            } else {
+		                System.out.println("Not found");
+		            }
+		        }
+		
+		        scanner.close();        
         }
-
-        while (scanner.hasNext()) {
-            String query = scanner.nextLine().trim();
-            if (phoneBook.containsKey(query)) {
-                System.out.println(query + "=" + phoneBook.get(query));
-            } else {
-                System.out.println("Not found");
-            }
+        else
+        {
+            System.out.println("Invalid value for n - following condition is failed - 1 <= n <= 100000");
         }
-
-        scanner.close();
     }
     
     private static boolean isValidPhoneNumber(String phoneNumber) {

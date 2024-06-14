@@ -11,14 +11,26 @@ public class Task_02_Hometask_Comparator {
         for (int i = 0; i < n; i++) {
             String name = scanner.next();
             int score = scanner.nextInt();
-            players[i] = new Player(name, score);
+            
+            if ((isValidName(name)) && (score<=1000)  && (score>=0) ) {
+            	players[i] = new Player(name, score);
+            }
+            else {
+                System.out.println("Entered Name or Score is Invalid");
+                i--;
+            }            	
         }
+        scanner.close();
         
         Arrays.sort(players, checker);
 
         for (Player player : players) {
             System.out.println(player.name + " " + player.score);
         }
+    }
+	
+	private static boolean isValidName(String name) {
+        return name.matches("^[a-z]+$");
     }
 	
 }
