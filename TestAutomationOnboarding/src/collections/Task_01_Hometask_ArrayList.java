@@ -24,15 +24,14 @@ public class Task_01_Hometask_ArrayList {
         System.out.println("\nEnter q denoting number of queries");
         int q = scanner.nextInt();
         for (int i = 0; i < q; i++) {
-            System.out.println("Enter x (row) and y(column) value for the query");
+            System.out.println("Enter x and y value for the query");
             int x = scanner.nextInt();
             int y = scanner.nextInt();
 
-            // Handling the query
             if (x <= lines.size() && y <= lines.get(x - 1).size()) {
-                System.out.println("Value at xth row and yth column: " + lines.get(x - 1).get(y - 1));
+                System.out.println("Value at x and y indexes: " + lines.get(x - 1).get(y - 1));
             } else {
-                System.out.println("ERROR - Invalid x(row) and y(column) values");
+                System.out.println("ERROR!");
             }
         }
     }
