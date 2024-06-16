@@ -56,6 +56,25 @@ public class Task_01_Hometask_Lambda_Expressions {
 		}
 
 		// 4. Use Runnable interface to start a new thread and print numbers from
+		System.out.println(	"\nRunnable interface (Without Lambda Expression): ");		
+		NumberPrinter numberPrinter = new NumberPrinter();
+        Thread thread = new Thread(numberPrinter);
+        thread.start();
+        
+		System.out.println(	"\nRunnable interface (With Lambda Expression): ");		
+        Thread thread2 = new Thread(() -> {
+            for (int i = 1; i <= 10; i++) {
+                System.out.println("Thread 2 Number: " + i);
+                try {
+                    Thread.sleep(2000); 
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+        thread2.start();
+        
+        
 
 		// 5. Use Comparator inerface to sort given list of numbers in reverse order
 		List<Integer> list1 = Arrays.asList(5, 3, 9, 1, 7);
@@ -345,4 +364,18 @@ class Employees implements Comparable<Employees> {
 	public String toString() {
 		return "Employee{" + "id=" + id + ", name='" + name + '\'' + '}';
 	}
+}
+
+class NumberPrinter implements Runnable {
+    @Override
+    public void run() {
+        for (int i = 1; i <= 10; i++) {
+            System.out.println("Thread 1 Number: " + i);
+            try {
+                Thread.sleep(2000); 
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
 }
