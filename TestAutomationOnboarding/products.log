@@ -32,3 +32,8 @@ Product{name='Laptop', price=35000.0, category='Electronics', grade='Regular'}
 Product{name='Shirt', price=2800.0, category='Clothing', grade='Regular'}
 Product{name='Watch', price=8000.0, category='Accessories', grade='Regular'}
 Product{name='Watch strap', price=900.0, category='Accessories', grade='Regular'}
+Product{name='Phone Case', price=700.0, category='Accessories', grade='Regular'}
+Product{name='Laptop', price=35000.0, category='Electronics', grade='Regular'}
+Product{name='Shirt', price=2800.0, category='Clothing', grade='Regular'}
+Product{name='Watch', price=8000.0, category='Accessories', grade='Regular'}
+Product{name='Watch strap', price=900.0, category='Accessories', grade='Regular'}
