@@ -12,7 +12,7 @@ public class Task_07_Hometask_Loggers {
         System.out.println("Division result: " + divisionResult);
         
         divisionResult = calculator.divide(10, 0);
-        System.out.println("Division result: " + divisionResult);
+        System.out.println("Division result (Exception): " + divisionResult);
 
 }
 	
