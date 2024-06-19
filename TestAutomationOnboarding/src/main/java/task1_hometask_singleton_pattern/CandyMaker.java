@@ -11,15 +11,19 @@ public class CandyMaker {
         empty = true;
         boiled = false;
     }
-
-    public synchronized static CandyMaker getInstance() {
+    
+    public static CandyMaker getInstance() {
         if (instance == null) {
-            System.out.println("Creating unique instance of Candy maker class");
-            instance = new CandyMaker();
+            synchronized (CandyMaker.class) {
+                if (instance == null) {
+                    System.out.println("Creating unique instance of Candy maker class");
+                    instance = new CandyMaker();
+                }
+            }
         }
         return instance;
     }
-
+    
     // To fill the boiler it must be empty, and once its full, we set the empty and boiled flags
     public void fill() {
         if (isEmpty()) {
